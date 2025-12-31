@@ -1,6 +1,10 @@
 asgiref==3.11.0
 attrs==25.4.0
+certifi==2025.11.12
+charset-normalizer==3.4.4
+cloudinary==1.44.1
 Django==6.0
+django-cloudinary-storage==0.3.0
 django-cors-headers==4.9.0
 django-environ==0.12.0
 djangorestframework==3.16.1
@@ -9,6 +13,7 @@ drf-spectacular==0.29.0
 drf-spectacular-sidecar==2025.12.1
 drf-yasg==1.21.11
 gunicorn==23.0.0
+idna==3.11
 inflection==0.5.1
 jsonschema==4.25.1
 jsonschema-specifications==2025.9.1
@@ -20,10 +25,13 @@ python-dotenv==1.2.1
 pytz==2025.2
 PyYAML==6.0.3
 referencing==0.37.0
+requests==2.32.5
 rest-framework-simplejwt==0.0.2
 rpds-py==0.30.0
+six==1.17.0
 sqlparse==0.5.5
 typing_extensions==4.15.0
 tzdata==2025.3
 uritemplate==4.2.0
+urllib3==2.6.2
 whitenoise==6.11.0
