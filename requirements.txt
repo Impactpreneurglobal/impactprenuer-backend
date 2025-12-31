@@ -2,7 +2,7 @@ asgiref==3.11.0
 attrs==25.4.0
 Django==6.0
 django-cors-headers==4.9.0
-django-environ==0.11.2
+django-environ==0.12.0
 djangorestframework==3.16.1
 djangorestframework_simplejwt==5.5.1
 drf-spectacular==0.29.0
@@ -14,6 +14,7 @@ jsonschema==4.25.1
 jsonschema-specifications==2025.9.1
 packaging==25.0
 pillow==12.0.0
+psycopg2-binary==2.9.11
 PyJWT==2.10.1
 python-dotenv==1.2.1
 pytz==2025.2
