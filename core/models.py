@@ -1,10 +1,11 @@
 from django.db import models
+from cloudinary.models import CloudinaryField
 
 
 class Program(models.Model):
     title = models.CharField(max_length=200)
     description = models.TextField()
-    image = models.ImageField(upload_to="programs/")
+    image = CloudinaryField('image')  # changed from ImageField
     date = models.DateField()
     created_at = models.DateTimeField(auto_now_add=True)
 
@@ -15,7 +16,7 @@ class Program(models.Model):
 class Blog(models.Model):
     title = models.CharField(max_length=200)
     description = models.TextField()
-    image = models.ImageField(upload_to="blogs/")
+    image = CloudinaryField('image')  # changed from ImageField
     date = models.DateField()
     created_at = models.DateTimeField(auto_now_add=True)
 
@@ -27,7 +28,7 @@ class TeamMember(models.Model):
     name = models.CharField(max_length=100)
     title = models.CharField(max_length=100)
     bio = models.TextField()
-    image = models.ImageField(upload_to="team/")
+    image = CloudinaryField('image')  # changed from ImageField
 
     twitter = models.URLField(blank=True, null=True)
     linkedin = models.URLField(blank=True, null=True)
