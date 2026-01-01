@@ -18,7 +18,7 @@ import cloudinary.uploader
 import cloudinary.api
 
 # This will automatically use CLOUDINARY_URL from the environment
-cloudinary.config()
+# cloudinary.config()
 
 env = environ.Env(
     DEBUG=(bool, False)
