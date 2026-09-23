@@ -1,5 +1,6 @@
 from django.db import models
 from cloudinary.models import CloudinaryField
+from django.conf import settings
 
 
 class Program(models.Model):
@@ -18,8 +19,16 @@ class Program(models.Model):
 class Blog(models.Model):
     title = models.CharField(max_length=200)
     description = models.TextField()
+     
     image = CloudinaryField('image')  # changed from ImageField
     date = models.DateField()
+    author = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.CASCADE,
+        related_name="blogs",
+        null=True,       # temporary: existing rows have no author
+        blank=True,
+    )
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
@@ -38,3 +47,14 @@ class TeamMember(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class Subscriber(models.Model):
+    email = models.EmailField(unique=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ["-created_at"]
+
+    def __str__(self):
+        return self.email
