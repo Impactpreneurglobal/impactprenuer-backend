@@ -1,0 +1,32 @@
+{% extends "emails/base.html" %}
+
+{% block title %}New blog: {{ blog.title }}{% endblock %}
+
+{% block content %}
+  <p style="margin:0 0 8px 0; font-size:13px; text-transform:uppercase; letter-spacing:0.8px; color:#0ea5e9; font-weight:600;">
+    New from the blog
+  </p>
+
+  <h1 style="margin:0 0 16px 0; font-size:24px; color:#0f172a; line-height:1.3;">
+    {{ blog.title }}
+  </h1>
+
+  <p style="margin:0 0 24px 0; color:#374151;">
+    {{ blog.description }}
+  </p>
+
+  <table role="presentation" cellpadding="0" cellspacing="0" style="margin:0 0 24px 0;">
+    <tr>
+      <td style="background:#0ea5e9; border-radius:8px;">
+        <a href="{{ blog_url }}" style="display:inline-block; padding:12px 24px; color:#ffffff; text-decoration:none; font-weight:600; font-size:15px;">
+          Read the full post →
+        </a>
+      </td>
+    </tr>
+  </table>
+
+  <p style="margin:0; color:#6b7280; font-size:14px;">
+    Or copy this link into your browser:<br>
+    <a href="{{ blog_url }}" style="color:#0ea5e9; word-break:break-all;">{{ blog_url }}</a>
+  </p>
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends "emails/base.html" %}
+
+{% block title %}Welcome to Impactpreneur Global{% endblock %}
+
+{% block content %}
+  <h1 style="margin:0 0 16px 0; font-size:24px; color:#0f172a;">Welcome aboard 👋</h1>
+
+  <p style="margin:0 0 16px 0;">Thanks for subscribing to <strong>Impactpreneur Global</strong>. You'll now be the first to hear about:</p>
+
+  <ul style="margin:0 0 24px 0; padding-left:20px;">
+    <li style="margin-bottom:6px;">New blog posts and insights</li>
+    <li style="margin-bottom:6px;">Programs and opportunities</li>
+    <li style="margin-bottom:6px;">Community news</li>
+  </ul>
+
+  <table role="presentation" cellpadding="0" cellspacing="0" style="margin:8px 0 24px 0;">
+    <tr>
+      <td style="background:#0ea5e9; border-radius:8px;">
+        <a href="{{ frontend_url }}" style="display:inline-block; padding:12px 24px; color:#ffffff; text-decoration:none; font-weight:600; font-size:15px;">
+          Visit our website
+        </a>
+      </td>
+    </tr>
+  </table>
+
+  <p style="margin:0; color:#6b7280; font-size:14px;">We'll only email you when there's something worth reading. No spam, ever.</p>
+{% endblock %}
