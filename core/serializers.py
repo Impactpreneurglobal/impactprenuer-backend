@@ -1,5 +1,9 @@
 from rest_framework import serializers
 from .models import Program, Blog, TeamMember, Subscriber
+from .models import (
+    Program, Blog, TeamMember, Subscriber,
+    ServiceRequest, ContactMessage, CommunityApplication,
+)
 
 
 class ProgramSerializer(serializers.ModelSerializer):
@@ -32,4 +36,26 @@ class SubscriberSerializer(serializers.ModelSerializer):
     class Meta:
         model = Subscriber
         fields = ["id", "email", "created_at"]
+        read_only_fields = ["id", "created_at"]
+
+
+
+class ServiceRequestSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ServiceRequest
+        fields = "__all__"
+        read_only_fields = ["id", "created_at"]
+
+
+class ContactMessageSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ContactMessage
+        fields = "__all__"
+        read_only_fields = ["id", "created_at"]
+
+
+class CommunityApplicationSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = CommunityApplication
+        fields = "__all__"
         read_only_fields = ["id", "created_at"]

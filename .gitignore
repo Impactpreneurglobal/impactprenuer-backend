@@ -117,4 +117,7 @@ celerybeat.pid
 # Add your own patterns below (notes, temp files, etc)
 notes.txt
 scratch/
-playground/
+playground/.env
+.env.*
+.env
+.env.*
