@@ -1,27 +1,119 @@
 {% extends "emails/base.html" %}
 
-{% block title %}Welcome to Impactpreneur Global{% endblock %}
+{% block title %}You're officially on the list!{% endblock %}
 
 {% block content %}
-  <h1 style="margin:0 0 16px 0; font-size:24px; color:#0f172a;">Welcome aboard 👋</h1>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#f4f5f4; padding:20px 0; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <tr>
+    <td align="center">
+      <!-- Main Container -->
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width:480px; width:100%;">
+        
+        <!-- Top Section (Header) -->
+        <tr>
+          <td align="center" style="background-color:#eef4eb; border-radius:4px; padding:30px 20px;">
+            <!-- Replace {{ frontend_url }} with your actual logo URL if hosted, or use a CID if attaching -->
+            <img src="https://i.imgur.com/ZAovTia.png" 
+     alt="Impactpreneur Global Logo" 
+     width="85" 
+     height="31" 
+     style="display:block; width:85px; height:31px; margin:0 auto 20px auto; border:0;">
+            <h1 style="margin:0; font-size:22px; font-weight:500; color:#111111; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">You're officially on the list!</h1>
+          </td>
+        </tr>
+        
+        <!-- Spacer -->
+        <tr><td height="12" style="font-size:12px; line-height:12px;">&nbsp;</td></tr>
 
-  <p style="margin:0 0 16px 0;">Thanks for subscribing to <strong>Impactpreneur Global</strong>. You'll now be the first to hear about:</p>
+        <!-- Middle Section (Content) -->
+        <tr>
+          <td align="center" style="background-color:#eef4eb; border-radius:4px; padding:40px 30px;">
+            <p style="margin:0 0 25px 0; font-size:15px; line-height:1.6; color:#333333;">
+              Welcome to Impactpreneur Global! You're now connected with a community of 200,000+ founders, entrepreneurs, and impact-driven leaders across our global network.
+            </p>
+            <p style="margin:0 0 25px 0; font-size:15px; line-height:1.6; color:#333333;">
+              We share actionable insights, opportunities, and resources to help you build, grow, and scale purpose-driven ventures.
+            </p>
 
-  <ul style="margin:0 0 24px 0; padding-left:20px;">
-    <li style="margin-bottom:6px;">New blog posts and insights</li>
-    <li style="margin-bottom:6px;">Programs and opportunities</li>
-    <li style="margin-bottom:6px;">Community news</li>
-  </ul>
+            <!-- White Card -->
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#ffffff; border-radius:12px; padding:25px; margin-bottom:25px; text-align:left;">
+              <tr>
+                <td style="padding:25px;">
+                  <p style="margin:0 0 15px 0; font-size:11px; font-weight:700; letter-spacing:0.5px; text-transform:uppercase; color:#111111;">What to expect in your inbox:</p>
+                  
+                  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <td width="20" valign="top" style="font-size:16px; font-weight:bold; color:#2e7d32; line-height:1.4;">&#10003;</td>
+                      <td style="font-size:15px; color:#333333; line-height:1.4; padding-bottom:12px;">Weekly Insights</td>
+                    </tr>
+                    <tr>
+                      <td width="20" valign="top" style="font-size:16px; font-weight:bold; color:#2e7d32; line-height:1.4;">&#10003;</td>
+                      <td style="font-size:15px; color:#333333; line-height:1.4; padding-bottom:12px;">Exclusive Founder Resources</td>
+                    </tr>
+                    <tr>
+                      <td width="20" valign="top" style="font-size:16px; font-weight:bold; color:#2e7d32; line-height:1.4;">&#10003;</td>
+                      <td style="font-size:15px; color:#333333; line-height:1.4;">Community Access</td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
 
-  <table role="presentation" cellpadding="0" cellspacing="0" style="margin:8px 0 24px 0;">
-    <tr>
-      <td style="background:#0ea5e9; border-radius:8px;">
-        <a href="{{ frontend_url }}" style="display:inline-block; padding:12px 24px; color:#ffffff; text-decoration:none; font-weight:600; font-size:15px;">
-          Visit our website
-        </a>
-      </td>
-    </tr>
-  </table>
+            <p style="margin:0; font-size:12px; color:#555555;">
+              Location: Remote-first &bull; Global
+            </p>
+          </td>
+        </tr>
 
-  <p style="margin:0; color:#6b7280; font-size:14px;">We'll only email you when there's something worth reading. No spam, ever.</p>
+        <!-- Spacer -->
+        <tr><td height="12" style="font-size:12px; line-height:12px;">&nbsp;</td></tr>
+
+        <!-- Bottom Section (Footer) -->
+        <tr>
+          <td align="center" style="background-color:#eef4eb; border-radius:4px; padding:30px 20px;">
+            
+            <!-- Social Icons -->
+            <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin:0 auto 25px auto;">
+              <tr>
+                <!-- LinkedIn -->
+                <td style="padding:0 12px;">
+                  <a href="#" style="text-decoration:none;">
+                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="22" height="22" style="display:block; border:0; opacity:0.6;">
+                  </a>
+                </td>
+                <!-- Instagram -->
+                <td style="padding:0 12px;">
+                  <a href="#" style="text-decoration:none;">
+                    <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" width="22" height="22" style="display:block; border:0; opacity:0.6;">
+                  </a>
+                </td>
+                <!-- Facebook -->
+                <td style="padding:0 12px;">
+                  <a href="#" style="text-decoration:none;">
+                    <img src="https://cdn-icons-png.flaticon.com/512/174/174848.png" alt="Facebook" width="22" height="22" style="display:block; border:0; opacity:0.6;">
+                  </a>
+                </td>
+              </tr>
+            </table>
+
+            <p style="margin:0 0 15px 0; font-size:13px; color:#333333;">
+              Email: <a href="mailto:impactpreneurglobal@gmail.com" style="color:#2e7d32; text-decoration:none;">impactpreneurglobal@gmail.com</a>
+            </p>
+
+            <p style="margin:0 0 10px 0; font-size:12px; color:#666666;">
+              &copy; 2026 Impactpreneur Global
+            </p>
+
+            <p style="margin:0; font-size:12px;">
+              <a href="{{ unsubscribe_url }}" style="color:#2e7d32; text-decoration:underline;">Unsubscribe</a> 
+              <span style="color:#333333; margin:0 4px;">|</span> 
+              <a href="{{ preference_center_url }}" style="color:#2e7d32; text-decoration:underline;">Preference Center</a>
+            </p>
+
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
 {% endblock %}
