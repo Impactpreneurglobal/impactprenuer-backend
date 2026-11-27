@@ -67,6 +67,14 @@ def send_form_emails(*, form_name, submitter_email, submitter_name, details):
       1. Confirmation to the submitter
       2. Notification to the team
     """
+    # Clean up the labels (e.g., 'full_name' -> 'Full Name') and remove 'id'
+    if isinstance(details, dict):
+        details = {
+            k.replace("_", " ").title(): v
+            for k, v in details.items()
+            if k != "id"
+        }
+
     _send_html(
         subject=f"We received your {form_name}",
         to=submitter_email,
